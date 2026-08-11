@@ -69,28 +69,69 @@ export function HomePage() {
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-sm font-semibold uppercase tracking-wide text-ink-400">¿Cómo funciona?</p>
             <h2 className="mt-2 text-balance text-2xl font-bold tracking-tight text-ink-950 sm:text-3xl lg:text-4xl">
-              Tres pasos para conectar ayuda
+              Sigue estos pasos para publicar tu disponibilidad para ayudar.
             </h2>
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-3 lg:mt-16 lg:gap-8">
             <StepCard
               num="01"
-              icon={<PencilLine className="h-6 w-6" />}
-              title="Publica tu ayuda"
-              description="Cuéntanos qué puedes hacer y dónde puedes ayudar."
+              title="Inicia tu publicacion."
+              description='Dale click al boton "Quiero ayudar".'
             />
             <StepCard
               num="02"
-              icon={<Search className="h-6 w-6" />}
-              title="Encuentra a quien necesitas"
-              description="Busca personas disponibles cerca de ti."
+              title="Completa tus datos."
+              description="Ingresa la información necesaria para que las personas puedan saber quién eres, dónde puedes ayudar y qué tipo de ayuda puedes ofrecer.
+
+Revisa cuidadosamente tus datos, especialmente tu número de WhatsApp y ubicación."
             />
             <StepCard
               num="03"
-              icon={<MessageCircle className="h-6 w-6" />}
-              title="Conecta por WhatsApp"
-              description="Habla directamente con la persona y coordinen la ayuda."
+              title="Guarda tu enlace de administración."
+              description="Cuando publiques tu ayuda recibirás un enlace privado de administración.
+
+Guárdalo en un lugar seguro. Es la única forma de administrar tu publicación.
+
+Desde este enlace podrás:
+
+Actualizar tu información,
+cambiar tu disponibilidad,
+Renovar tu publicación,
+desactivar tu ayuda,
+eliminar tu publicación.
+
+No compartas este enlace con otras personas."
+            />
+            <StepCard
+              num="04"
+              title="Encuentra la ayuda que necesitas"
+              description='Si estás buscando ayuda, haz clic en "Encontrar ayuda".
+
+Puedes buscar personas según:
+
+Ciudad o zona.
+Tipo de ayuda.
+Disponibilidad.
+Capacidad de desplazamiento.
+
+Revisa la información de cada persona antes de contactarla.'
+            />
+            <StepCard
+              num="05"
+              title="Contacta directamente."
+              description='Cuando encuentres a alguien que pueda ayudarte, entra en su perfil y pulsa "Contactar por WhatsApp".
+
+Serás dirigido directamente a WhatsApp para comunicarte con esa persona y coordinar la ayuda.'
+            />
+            <StepCard
+              num="06"
+              title="Mantén tu publicación actualizada."
+              description='Si ya no puedes ayudar, desactiva tu publicación desde tu enlace de administración.
+
+Si todavía estás disponible, puedes renovarla para continuar apareciendo en la plataforma.
+
+Esto ayuda a que las personas encuentren información actualizada y evita que contacten a personas que ya no están disponibles.'
             />
           </div>
         </div>
@@ -171,9 +212,6 @@ function StepCard({
   return (
     <div className="group relative rounded-2xl border border-ink-100 bg-white p-6 transition-all duration-200 hover:border-ink-200 hover:shadow-sm sm:p-7">
       <div className="flex items-center justify-between">
-        <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-ink-50 text-ink-700 transition-colors group-hover:bg-ink-900 group-hover:text-white">
-          {icon}
-        </span>
         <span className="text-3xl font-extrabold tracking-tight text-ink-100">{num}</span>
       </div>
       <h3 className="mt-5 text-lg font-semibold text-ink-900">{title}</h3>
